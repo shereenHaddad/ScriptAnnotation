@@ -1,25 +1,24 @@
-package com.hello.world.servlets;
+package a.b.c;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
- * Servlet implementation class GetUserAgent
+ * Servlet implementation class Logout
  */
-@WebServlet("/GetUserAgent")
-public class GetUserAgent extends HttpServlet {
+@WebServlet("/Logout")
+public class Logout extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public GetUserAgent() {
+    public Logout() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -29,22 +28,15 @@ public class GetUserAgent extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		PrintWriter out = response.getWriter();
-		if(request.getHeader("User-Agent").indexOf("Mobile") != -1) {
-		    //you're in mobile land
-			out.print("Mobile");
-		  } else {
-			  out.print("Desktop");
-		    //nope, this is probably a desktop
-		  }
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		HttpSession session = request.getSession();
+		session.removeAttribute("userName");
 	}
 
 }
