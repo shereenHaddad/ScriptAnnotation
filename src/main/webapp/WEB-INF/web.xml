@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<display-name>HelloWorldForm</display-name>
+	<welcome-file-list>
+		<welcome-file>register.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>RegisterUsers</servlet-name>
+		<servlet-class>com.hello.world.servlets.RegisterUsers</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterUsers</servlet-name>
+		<url-pattern>/RegisterUsers</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>GetRegisteredUsers</servlet-name>
+		<servlet-class>com.hello.world.servlets.GetRegisteredUsers</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetRegisteredUsers</servlet-name>
+		<url-pattern>/GetRegisteredUsers</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>GetUserAgent</servlet-name>
+		<servlet-class>com.hello.world.servlets.GetUserAgent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetUserAgent</servlet-name>
+		<url-pattern>/GetUserAgent</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EmptyHWTable</servlet-name>
+		<servlet-class>com.hello.world.servlets.EmptyHWTable</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmptyHWTable</servlet-name>
+		<url-pattern>/EmptyHWTable</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>

@@ -1,0 +1,265 @@
+#page1 {
+	z-index: 1;
+	margin: auto;
+}
+
+
+.tabs {
+	float: none;
+	list-style: none;
+	position: relative;
+	/* 	margin: auto; */
+	text-align: left;
+}
+
+.tabs li.rightFloat {
+	float: right;
+	display: block;
+}
+
+.tabs input[type="radio"]:not(.normalR) {
+	position: absolute;
+	top: -9999x;
+	left: -9999px;
+}
+
+h1 span {
+	font-size: 13px;
+	display: block;
+	padding-left: 4px;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 40px;
+	font-weight: normal;
+	/* text-transform: uppercase; */
+	float: left;
+	margin: 20px 0 10px 150px;
+}
+
+.tabs label {
+	display: block;
+	padding: 14px 21px;
+	border-radius: 2px 2px 0 0;
+	font-size: 20px;
+	font-weight: normal;
+	/* text-transform: uppercase; */
+	background: #4F81BD;
+	color: white;
+	cursor: pointer;
+	position: relative;
+	top: 30px;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.tabs label:hover {
+	background: #4F81BD;
+}
+
+.tabs .tab-content {
+	z-index: 2;
+	display: none;
+	overflow: hidden;
+	width: 100%;
+	font-size: 17px;
+	line-height: 25px;
+	padding: 25px;
+	position: absolute;
+	top: 100px;
+	left: 0;
+	background: #9CBDFF; /*replace with theme color1 */
+}
+
+.tabs [id^="tab"]:checked+label {
+	top: 50px;
+	padding-top: 25px;
+	background: #4F81BD;
+}
+
+.tabs [id^="tab"]:checked  ~ [id^="tab-content"] {
+	display: block;
+}
+
+.leftDiv {
+	position: absolute;
+	right: 0px;
+	width: 60%;
+	background-color: #C7FFD8;
+	border-right: 2px solid #365C32;
+	border-top: 2px solid #365C32;
+	border-left: 2px solid #365C32;
+	bottom: -20px;
+	top: 20px;
+}
+
+.leftDivBottom {
+	position: absolute;
+	right: 0px;
+	width: 60%;
+	background-color: #D3DFEE;
+	border-right: 2px solid #4F81BD;
+	border-bottom: 2px solid #4F81BD;
+	border-left: 2px solid #4F81BD;
+	height: 50%;
+	border-left: 2px solid #4F81BD;
+	color: red;
+	font-style: bold;
+	font-size: 25px;
+	text-align: center;
+}
+
+.leftDivBottom2 {
+	position: absolute;
+	right: 0px;
+	width: 70%;
+	background-color: #D3DFEE;
+	border-right: 2px solid #4F81BD;
+	border-bottom: 2px solid #4F81BD;
+	border-left: 2px solid #4F81BD;
+	height: 50%;
+	border-left: 2px solid #4F81BD;
+	color: red;
+	font-style: bold;
+	font-size: 25px;
+	text-align: center;
+}
+.error1 {
+	color: red;
+	font-size: 15px;
+	font-style: italic;
+}
+
+.commentSpan {
+	text-decoration: underline;
+	text-align: center;
+	color: #365C32;
+}
+
+.leftDiv {
+	position: absolute;
+	right: 0px;
+	width: 60%;
+	background-color: #D3DFEE;
+	border-right: 2px solid #365C32;
+	border-top: 2px solid #365C32;
+	border-left: 2px solid #365C32;
+	bottom: -20px;
+	top: 20px;
+}
+
+.leftDiv2 {
+	position: absolute;
+	right: 0px;
+	width: 70%;
+	background-color: #D3DFEE;
+	border-right: 2px solid #365C32;
+	border-top: 2px solid #365C32;
+	border-left: 2px solid #365C32;
+	bottom: -20px;
+	top: 20px;
+}
+.banner {
+	height: 50px;
+	width: 100%;
+	background-color: #4F81BD;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+.inputStyle {
+	position: absolute;
+	border-radius: 25px;
+	width: 90%;
+	height: 27px;
+	text-align: center;
+	/*border-radius: 25px;*/
+	left: 5%;
+}
+
+
+.inputspan1 {
+	width: 30%;
+	color: white;
+	background-color: #4F81BD;
+	height: 25px;
+	/*border-bottom-left-radius: 25px;
+	border-top-left-radius: 25px;*/
+	float: left;
+	font-family: "Arial", Sens-serif;
+	font-size: 15px;
+}
+
+.inputspan2 {
+	width: 70%;
+	background-color: white;
+	height: 25px;
+	/*border-bottom-right-radius: 25px;
+	border-top-right-radius: 25px;*/
+	float: right;
+}
+.inputDesign2 {
+	outline: 0;
+	width: 100%;
+	height: 85%;
+	font-size: 15px;
+}
+
+.inputDesign {
+	outline: 0;
+	width: 100%;
+	height: 82%;
+	font-size: 15px;
+}
+
+.logoImg{
+	position: absolute;
+	left : 130px;
+	width :250px;
+	top :50px;
+}
+
+.buttonspan1 {
+	width: 30%;
+	color: white;
+	background-color: #4F81BD;
+	height: 25px;
+	/*border-radius: 25px;*/
+	float : right;
+	cursor: pointer;
+	font-family: "Arial", Sens-serif;
+	font-size: 15px;
+}
+.sepDiv{height:40px;}
+
+table.reportTable {
+	font-family: "Lato", "sans-serif";
+	width: 98%;
+	table-layout:fixed;
+}
+
+table.reportTable th {
+	background-color: #4F81BD;
+	color: white;
+}
+
+table.reportTable tr:nth-child(even) {
+	background-color: #eee;
+}
+
+table.reportTable td {
+	border-right: 1px solid #D9E4E6;
+	word-wrap: break-word;
+}
+
+.mobile{
+color:red;
+align:center;
+}
+
+
